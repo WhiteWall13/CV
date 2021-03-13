@@ -1,0 +1,93 @@
+<!--doctype html-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Portfolio</title>
+      <link rel="stylesheet" type="text/css" href="index.css">
+      <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   </head>
+   <body>
+      <section>
+         <!--navigation------------------------->
+         <nav>
+            <!--logo-->
+            <a href="http://www.u-pem.fr/" class="logo" target="_blank"><img src="images/upem.png" height="100px" width="100px"></a>
+            <!--menu-->
+            <ul>
+               <li><a href="#home" class="active">Accueil</a></li>
+               <li><a href="#about">Présentation</a></li>
+               <li><a href="#interest">Centres d'intérêts</a></li>
+               <li><a href="#contact">Contactez-moi</a></li>
+            </ul>
+         </nav>
+      </section>
+      <!--text----------------------->
+      <div id="home" class="text-container">
+         <p>Je suis</p>
+         <p>Nicolas Hameau</p>
+         <p>Étudiant en informatique <br>à l'Université de Marne-la-Vallée</p>
+      </div>
+      <!--model---------------------->
+      <img alt="model" class="model" src="images/assis_blanc.jpg">
+      <div id = "about" class="about-container">
+         <!--img-->
+         <img src="images/debout_noir.jpg"/>
+         <!--about-me-text-->
+         <div class="about-text">
+            <p>Présentation</p>
+            <p>Étudiant en informatique</p>
+            <p>Bonjour, je suis Nicolas Hameau, né le 3 mars 2002 et actuellement en étude d'informatique à l'IUT de l'Université Paris-Est Marne-la-Vallée. En 2020, j'ai obtenu le baccalauréat scientifique spécialité SVT option mathématiques avec la mention bien. Je suis également sportif de haut niveau en roller hockey. J'évolue en tant que gardien au sein du club des Tigres de Garges, champions d'Europe en titre. J'ai également obtenu le diplôme d'arbitre de deuxième degré ce qui me permet d'arbitrer des matchs de roller hockey au niveau national.</p>
+            <p>Je souhaite travailler dans l'informatique lorsque j'aurai terminé mes études, plus particulièrement dans le domaine du développement et/ou des systèmes informatiques.</p>
+         </div>
+      </div>
+      <!--services-container---------------------------->
+      <div id = "interest" class="services ">
+         <!--text-->
+         <div class="services-text ">
+            <p>Centres d'intérêts</p>
+            <p></p>
+            <p>Ces sujets me passionnent, j'aime les explorer durant mon temps libre afin de progresser et d'en apprendre toujours plus. Je passe donc beaucoup de temps à me documenter grâce aux livres, aux documentaires mais également grâce à internet qui est une immense source de contenus et de connaissances. Les deux domaines qui me passionnent sont le sport et les sciences. Ils permettent de se dépasser en cherchant à résoudre des problèmes.</p>
+         </div>
+         <div class="box-container">
+            <!--1------------->
+            <div class="box-1">
+               <span>1</span>
+               <p class="heading">Sport</p>
+               <p class="details">Depuis tout jeune, le sport fait partie de ma vie et m'a beaucoup appris, notamment le travail en équipe, la communication mais aussi la persévérance et la confiance en soi. L'esprit de compétition m'anime lorsqu'il est sain et constructif.</p>
+            </div>
+            <!--2------------->
+            <div class="box-2">
+               <span>2</span>
+               <p class="heading">Informatique</p>
+               <p class="details">C'est un outil essentiel qui permet de gérer beaucoup de données. J'aime comprendre son fonctionnenement et réfléchir à développer des programmes. Le développement ouvre des portes à un monde de création sans limite.</p>
+            </div>
+            <!--3------------->
+            <div class="box-3">
+               <span>3</span>
+               <p class="heading">Astronomie</p>
+               <p class="details">L'astronomie me passionne tout particulièrement et prend une place importante dans ma vie. Elle permet de s'émerveiller de la beauté de l'Univers, de son immensité et de sa complexité tout en restant très mystérieux. J'aime observer des objets du ciel profond avec mon téléscope.</p>
+            </div>
+         </div>
+      </div>
+      <!--footer--------------->
+      <footer id = "contact">
+         <!--heading-->
+         <p>Contactez-moi</p>
+         <!--social-->
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nicolas-hameau-13242002/" target="_blank"><img src="https://img.icons8.com/metro/26/000000/linkedin.png"/></a>
+            <a href="mailto: nicolas.hameau@free.fr"><img src="https://img.icons8.com/metro/26/000000/email.png"/></a>
+            <a href="tel:+33652711030"><img src="https://img.icons8.com/material/24/000000/phone-not-being-used.png"/></a>
+         </div>
+      </footer>
+      <!--JQUery-------------------->
+      <script type="text/javascript" src="js/JQuery.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function(){
+         	$('.toggle').click(function(){
+         		$('nav').toggleClass('active')
+         	})
+         })
+      </script>
+   </body>
+</html>
